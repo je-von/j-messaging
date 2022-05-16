@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:id="@+id/register_view"
+    android:forceDarkAllowed="false"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="30dp"
+            >
+            <TextView
+                android:id="@+id/txt_title"
+                android:textSize="45sp"
+                android:fontFamily="sans-serif-black"
+                android:textFontWeight="700"
+                android:textStyle="italic"
+                android:letterSpacing="0.1"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:text="JMessaging"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="50dp"
+                android:layout_gravity="center"
+                android:layout_height="3dp"
+                android:layout_marginVertical="30dp"
+                android:background="#5cffa5" />
+
+            <TextView
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:textFontWeight="@integer/material_motion_duration_long_1"
+                android:letterSpacing="0.1"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:text="Create an account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/txt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:hint="Name"
+                android:inputType="textPersonName"/>
+
+            <EditText
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Email Address"
+                android:inputType="textEmailAddress"/>
+
+
+            <EditText
+                android:id="@+id/txt_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+
+            <EditText
+                android:id="@+id/txt_confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"/>
+
+            <TextView
+                android:paddingLeft="5sp"
+                android:layout_marginTop="30dp"
+                android:text="Gender"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:id="@+id/radio_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:text="Male"
+                    android:layout_weight="6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:text="Female"
+                    android:layout_weight="6"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:text="Register"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#5cffa5"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

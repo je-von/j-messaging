@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/CardView.Light"
+    tools:context=".MainActivity"
+    android:id="@+id/login_view"
+    android:forceDarkAllowed="false">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingHorizontal="30dp">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:textSize="45sp"
+        android:fontFamily="sans-serif-black"
+        android:textFontWeight="700"
+        android:textStyle="italic"
+        android:letterSpacing="0.1"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@android:color/primary_text_light"
+        android:text="JMessaging"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="50dp"
+        android:layout_gravity="center"
+        android:layout_height="3dp"
+        android:layout_marginVertical="30dp"
+        android:background="#5cffa5" />
+
+    <TextView
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        android:letterSpacing="0.1"
+        android:layout_gravity="center_horizontal"
+        android:text="WELCOME"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"/>
+
+
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:text="Login"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#5cffa5"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+        <TextView
+            android:id="@+id/txt_register"
+            android:textColor="#00b3ff"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:text="Don't have an account yet? Register Here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
